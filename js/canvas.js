@@ -117,8 +117,8 @@ function drawSpiral() {
       endTurn = Math.PI * 1.5;
       x = x - previous;
     } else if (i % 4 === 0) {
-      endTurn = Math.PI;
       startTurn = Math.PI * 1.5;
+      endTurn = Math.PI;
       y = y + previous;
     } else if (i % 4 === 1) {
       startTurn = Math.PI;
