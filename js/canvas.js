@@ -34,9 +34,9 @@ function drawSquares() {
       return;
     }
 
-    let squareSize = fibonacci(i) * scale;
-    let lastSize = fibonacci(i - 1) * scale;
-    let previous = fibonacci(i - 2) * scale;
+    const squareSize = fibonacci(i) * scale;
+    const lastSize = fibonacci(i - 1) * scale;
+    const previous = fibonacci(i - 2) * scale;
 
     if (i % 7 === 0) {
       c.fillStyle = "red";
@@ -105,8 +105,8 @@ function drawSpiral() {
 
     sequence.innerHTML = "Sequence: " + fibonacci(i);
 
-    let squareSize = fibonacci(i) * scale;
-    let previous = fibonacci(i - 2) * scale;
+    const squareSize = fibonacci(i) * scale;
+    const previous = fibonacci(i - 2) * scale;
 
     if (i % 4 === 2) {
       startTurn = Math.PI / 2;
