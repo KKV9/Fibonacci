@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+#sequence {
+  font-weight: bolder;
+}
+.hidden {
+  display: none;
+}

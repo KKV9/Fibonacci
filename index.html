@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Canvas</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Fibonacci sequence</h1>
+    <p>
+      The fibonacci sequence is a series of numbers in which each number is the
+      sum of the two preceding ones. e.g. 0, 1, 1, 2, 3, 5, 8, 13, 21, 34. Start
+      at 1, add the previous number (0) and get 1. Then, 1+1=2, 1+2=3, 2+3=5,
+      etc.
+    </p>
+    <p>
+      Here is a visual representation of the fibonacci sequence drawn out as
+      squares: <button onclick="drawSquares()" id="button1">Draw</button>
+    </p>
+    <div class="hidden" id="section1">
+      <p>
+        Each square, starting from the center, have side lengths corresponding
+        to the fibonacci sequence. Note that the two previous squares have a
+        side length equal to the proceeding square.
+      </p>
+      <p>
+        We can draw an arc through each square to create a spiral:
+        <button onclick="drawSpiral()" id="button2">Draw</button>
+      </p>
+    </div>
+    <div class="hidden" id="section2">
+      <p>
+        This spiral is known as the Fibonacci spiral. It is closely related to
+        the golden spiral, which grows by a factor of Phi (φ) every quarter
+        turn.
+      </p>
+      <p>
+        The pattern and proportions of the golden spiral are often found in
+        nature. For example, seashells and flowers. Phi is an irrational number,
+        approximately equal to 1.618... It is also called the golden ratio.
+      </p>
+      <p>
+        As the numbers increase in the sequence, the ratio between the numbers
+        gets closer to Phi. For example, 13/8 = 1.625... 21/13 = 1.615... and
+        34/21 = 1.619... So, the Fibbonacci spiral is an approximation of the
+        golden spiral.
+      </p>
+    </div>
+    <hr />
+    <p id="sequence">Sequence:</p>
+    <canvas></canvas>
+    <script src="js/canvas.js"></script>
+  </body>
+</html>
